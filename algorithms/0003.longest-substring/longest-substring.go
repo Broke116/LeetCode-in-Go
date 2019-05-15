@@ -1,5 +1,8 @@
 package problem0003
 
+// LengthOfLongestSubstring is the solution of problem 3
+// dictionary initialization should be done inside the for loop. if it is done outside the function, then the time complexity increases. In addtion if 256 sized array is used, then the huge chunk of memory
+// is allocated for nothing
 func LengthOfLongestSubstring(s string) int {
 	if s == " " {
 		return 1
@@ -20,3 +23,14 @@ func LengthOfLongestSubstring(s string) int {
 	}
 	return max
 }
+
+/*
+"abcabcbb" 3
+"bbbbb" 1
+"pwwkew" 3
+" " 1
+"au" 2
+"c" 1
+"aab" 2
+
+*/
