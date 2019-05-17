@@ -52,3 +52,11 @@ func appendStack(stack stack, V string) []string { // #a#c
 	}
 	return stack
 }
+
+/*
+	"ab##", "c#d#"
+	"a##c", "#a#c"
+	"a#c", "b"
+	"a##c", "#a#c"
+	"ab##", "c#d#"
+*/
